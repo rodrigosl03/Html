@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crriando condições</title>
+</head>
+<body>
+    <h1>Teste de velocidade</h1>
+    velocidade do carro<input type="number" name="" id="velo">Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="di">
+        <p>Ver a velocidade</p>
+    </div>
+    <h1>Nacionalidade</h1>
+    <input type="text" id="res">
+    <input type="button" value="pressione" onclick="naci()">
+    <div id="div2">
+    </div>
+    <script>
+    var naciO=document.getElementById('res')
+    var c=document.getElementById('di')
+    var divi=document.getElementById('div2')
+        function calcular(){
+            var vel=document.getElementById('velo')
+            var veloc=Number(vel.value)
+            if (veloc > 60){ 
+                c.innerHTML=`<p>Passou do limite,com velocidade de ${veloc}Km/h,<strong>MULTADO!</strong></p>`
+            }else{
+                c.innerHTML='<p>Não será multado</p>'
+            }
+        }
+         function naci(){
+             var pala=String(naciO.value)
+            if (pala=='Br' || pala=='Brasileiro'){
+                 divi.innerHTML='<p>Você é brasileiro</p>'
+             }else{
+                 divi.innerHTML='<p>Você é estrangeiro</p>'
+             }
+         }
+    </script>
+</body>
+</html>

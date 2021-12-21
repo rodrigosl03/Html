@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping tags</title>
+    
+    <style>
+       body{
+           font-family: Arial, Helvetica, sans-serif;
+           margin: 0px;
+           background-color: rgb(139, 139, 139);
+       }
+       header{
+           background-color: white;
+           padding: 10px;
+           margin: 5px;
+           border-radius:10px ;
+       }
+       main{
+           background-color: white;
+           padding: 10px;
+           margin: 7px;
+           border-radius:10px ;
+       }
+       nav{
+           background-color: rgb(107, 106, 106);
+           padding: 5px;
+           margin: 6px;
+           box-shadow: 2px 2px 2px 2px black;
+       }
+       nav>a{
+           padding: 2px;
+           color:white;
+           margin-right: 16px;
+       }
+      main>section{
+          background-color: rgb(194, 194, 194);
+          padding: 4px;
+      }
+      main>section>aside{
+          background-color: rgb(131, 130, 130);
+          margin-bottom: 30px;
+      }
+      footer{
+          background-color: black;
+          color: white;
+          text-align: center;
+         padding: 4px;
+      }
+      footer>p{
+          margin: 0px;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav><a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <p>Textos sobre tal coisa</p>
+        <section>
+            <article>
+                <h1>Falas de filsofos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime minima veniam, quod veritatis iste, laudantium nesciunt reprehenderit eius beatae id quibusdam molestias cumque omnis, molestiae esse commodi explicabo distinctio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis reprehenderit necessitatibus harum illum laboriosam adipisci tenetur aperiam laudantium, inventore ipsum, possimus esse numquam iste unde soluta dolores, quibusdam dicta sunt!</p>
+            </article>
+            <aside><p>escrito por THomas Hobbes se liga no <a href="#">link</a></p></aside>
+        </section>
+    </main>
+    <footer>
+        <p>Feito</p>
+    </footer>
+</body>
+</html>

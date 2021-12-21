@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Com essa imagens ,irá adaptar para cada tipo de aparelho <br>
+    como o celular , tablet e computador ; se quiser mude apenas o <strong><ins>zoom</ins></strong>
+
+<picture>
+    <source media="(max-width:750px )" srcset="Imagens/foto-P.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="Imagens/foto-M.png" type="image/png">
+    <img src="Imagens/foto-G.png" alt="imagem flexivel">
+</picture>
+
+<h1>Audio</h1>
+<p>Usando audio no html5</p>
+<audio src="audio/Eden - ALBIS.mp3"  autoplay controls></audio>
+<h1>Video</h1>
+<p>Usando os videos no html5, use diferentes <ins><strong>formatos</strong></ins><br>como o MP4,M4V,wEBM e OGV</p>
+<h2>1- Video que consome os seus dados </h2>
+<video width="600" height="300"  controls autoplay>
+  <source src="videos/Meuvideo-2.mp4" type="video/mp4">
+  <source src="videos/Meuvideo-3.webm" type="video/webm">
+  <source src="videos/Meuvideo-1.m4v" type="video/mp4">
+  
+</video>
+<p>Caso não esta disponivel para assistir o video baixe <a href="videos/Meuvideo-2.mp4" download="Meuvideo-2.mp4" type="video/mp4">aqui</a></p>
+
+<h2>2-Videos do youtube,que consome dados do youtube,n o seu</h2>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/K1CxMHCAJjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

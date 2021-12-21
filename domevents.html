@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando numeros</title>
+    
+</head>
+<body>
+     
+    <h1>Somando valores</h1>
+    <input type="number" id='txt1'>
+    <input type="number" id="txt2">
+    <input type="button" value="somar" onclick="soma()">
+    <div>
+        <p>somando os valores acima</p>
+    </div>
+    <script>
+      function soma(){
+            var valor1=document.getElementById('txt1')
+            var valor2=document.getElementById('txt2')
+            var di=document.getElementsByTagName('p')[0]
+            var a=Number(valor1.value)
+            var b=Number(valor2.value)
+            var soma=a+b
+            di.innerHTML=(` A soma é igual <strong>${soma}</strong>`)
+        }
+    </script>
+</body>
+</html>
